@@ -5,6 +5,8 @@
 
 body
 {
+    padding:0;
+    margin:0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -79,7 +81,7 @@ body
 {
     position:fixed;
     top:0;
-    left:0;
+    left:15%;
     right:0;
     bottom:0;
 
@@ -111,12 +113,18 @@ img.sectionImg-left, img.sectionImg-right
     margin-left:auto;
     margin-right:auto;
 }
-
+img.sectionImg-left
+{
+    float: left;
+}
+img.sectionImg-right
+{
+    float:right;
+}
 img.bgImg
 {
     object-fit: cover;
 }
-
 .bgImgOverlay
 {
     position:absolute;
