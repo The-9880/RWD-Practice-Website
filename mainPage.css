@@ -8,39 +8,59 @@ body
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Sidebar stylings here. Content area stylings further below.*/
+/* Gridview implementation */
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{Width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+/* End of Gridview */
 
+
+/* Sidebar stylings here. Content area stylings further below.*/
 .sidebar
 {
     margin:0;
     padding:0;
 
     float:left;
-    width:10%;
-    background-color: #333333;
+    width:15%;
+    background-color: #000000;
     height:100%;
 
-    position:sticky;
+    position:fixed;
     top:0px;
+    left:0px;
 }
-
 #navBtn
 {
     position:absolute;
     right:5px;
     top:5px;
-
     padding:0;
+    margin:0;
+
     font-size:30px;
 }
-
+.sidebar-items
+{
+    text-align:center;
+}
 .sidebar a
 {
-    display:block;
+    display:table;
     color:white;
     text-decoration:none;
     padding:10px;
-
+    margin:10px;
+    font-size:25px;
     border-bottom: 1px solid white;
 }
 
@@ -49,7 +69,7 @@ body
 
 .content
 {
-    width:90%;
+    width:85%;
     float:right;
 }
 
@@ -84,12 +104,10 @@ body
 }
 
 
-img.sectionImg
+img.sectionImg-left, img.sectionImg-right
 {
-    width:50%;
     height:auto;
     border-radius:10px;
-    display:block;
     margin-left:auto;
     margin-right:auto;
 }
