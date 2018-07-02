@@ -208,3 +208,13 @@ img.sectionImg-right
     display:block;
     height:150px;
 }
+.quarter-whitespace
+{
+    display:block;
+    height:75px;
+}
+.eighth-whitespace
+{
+    display:block;
+    height:37.5px;
+}
