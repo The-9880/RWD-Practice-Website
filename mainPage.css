@@ -117,22 +117,6 @@ body
     font-size:60px;
 }
 
-
-img.sectionImg-left, img.sectionImg-right
-{
-    height:auto;
-    border-radius:10px;
-    margin-left:auto;
-    margin-right:auto;
-}
-img.sectionImg-left
-{
-    float: left;
-}
-img.sectionImg-right
-{
-    float:right;
-}
 img.bgImg
 {
     object-fit: cover;
@@ -159,6 +143,59 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
+
+/* The styles for content section cards */
+.clearfix::after
+{
+    content:"";
+    clear:both;
+    display:table;
+}
+.content-section
+{
+    /*background-color: #ccc;*/
+    background-color: #aaa;
+    box-shadow: #000000;
+    position:relative;
+    padding:5px 5px;
+
+    box-shadow: 0 5px 15px #555555;
+}
+.content-text
+{
+    position:absolute;
+    top:0;
+    bottom:0;
+}
+.content-text p
+{
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+    color:white;
+    font-size:20px;
+}
+img.sectionImg-left, img.sectionImg-right
+{
+    height:auto;
+    border-radius:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+img.sectionImg-left
+{
+    float: left;
+}
+img.sectionImg-right
+{
+    float:right;
+}
+
 
 /* Spacing classes. */
 .whitespace
