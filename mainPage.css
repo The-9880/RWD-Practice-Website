@@ -120,6 +120,9 @@ body
 {
     padding:100px;
     padding-bottom: 200px;
+
+    padding-left:0;
+    padding-right:0;
 }
 #subHeading
 {
@@ -187,7 +190,7 @@ hr {
     transform:translate(-50%, -50%);
 
     color:white;
-    font-size:2vw;/*20 px*/
+    font-size:1.6vw;/*20 px*/
     text-align:justify;
 }
 img.sectionImg-left, img.sectionImg-right
@@ -235,7 +238,7 @@ img.sectionImg-right
 {
     .sidebar
     {
-        width:7%;
+        width:5%;
     }
     [class*="sectionImg"]
     {
@@ -259,5 +262,10 @@ img.sectionImg-right
         transform:none;
 
         font-size:3vw;
+    }
+
+    .centerText-heading
+    {
+        padding-top:0px;
     }
 }
