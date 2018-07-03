@@ -33,13 +33,16 @@ body
     padding:0;
 
     float:left;
-    width:7%;
+    width:2%;
     background-color: #000000;
     height:100%;
 
     position:fixed;
     top:0px;
     left:0px;
+    z-index:10;
+
+    transition: width 0.5s;
 }
 #navBtn
 {
@@ -57,10 +60,14 @@ body
 {
     height:100%;
     padding:100px 0;
+
     display:flex;
     flex-direction: column;
     justify-content:space-around;
     text-align:center;
+    visibility: hidden;
+
+    transition: visibility 0s, opacity 0.5s;
 }
 #sidebar-items a
 {
@@ -87,14 +94,14 @@ body
 {
     margin:0;
     padding:0 75px;
-    width:93%;
+    width:98%;
     float:right;
 }
 .container
 {
     position:fixed;
     top:0;
-    left:7%;
+    left:2%;
     right:0;
     bottom:0;
 
@@ -179,6 +186,7 @@ hr {
 
     color:white;
     font-size:20px;
+    text-align:justify;
 }
 img.sectionImg-left, img.sectionImg-right
 {
