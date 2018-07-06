@@ -19,8 +19,24 @@
             <a id="navBtn" href="javascript:navToggle();">≡</a>
         </div>
 
-        <div id="contentArea">
+        <div id="contentArea" class="col-12 col-s-12">
             
+            <!-- I'm using two div's atm. Can I leverage the column-count property to use one div while also having each image 
+            take up the full width of each div? Even as I wrote that, I think I just answerd my own question. Can explicity state for
+            images that column-span be 1. -->
+
+            <div class="col-half">
+                <img src="images/gallery/pidjin.png">
+                <img src="images/gallery/samurai.jpg">
+                <img src="images/gallery/sword.jpg">
+                <img src="images/gallery/warrior.png">
+            </div>
+
+            <div class="col-half">
+                <img src="images/gallery/steam.jpg">
+                <img src="images/gallery/vegeta.jpg">
+                <img src="images/gallery/zealand.jpg">
+            </div>
         </div>
     
     </body>

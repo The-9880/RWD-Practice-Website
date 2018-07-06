@@ -4,9 +4,28 @@
 }
 body
 {
+    margin:0;
     padding:0;
+    background-color:#eeeeee;
+
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+/* Gridview setup for mobile-first design */
+[class*='col']
+{
+    width:100%;
+    float:left;
+}
+
+/* Here's a special-case class I want because I plan to have images shown in two columns on mobile.*/
+/* On other platforms, this is just equivalent to .col-6 for a 12-column gridview, or whatever.*/
+.col-half
+{
+    width:50%;
+}
+/* End of gridview implementations */
+
 
 /* Navbar */
 .navBar
@@ -14,7 +33,8 @@ body
     background-color:black;   
     text-align:center;
     position:sticky;
-    top:0;
+    top:0px;
+    z-index: 10;
 }
 #navBtn
 {
@@ -36,7 +56,7 @@ body
 .navItems a
 {
     color: white;
-    padding:1vw 0;
+    padding:2vw 0;
     text-decoration: none;
 }
 .navItems a:not(:last-child)
@@ -50,5 +70,16 @@ body
     color:black;
 }
 
+img
+{
+    /* Constrain images within their columns while maintaining aspect ratio.*/
+    width:100%;
+    height:auto;    
+}
+
 
 /* Content area stylings */
+#contentArea
+{
+    padding:5px 5px;
+}
