@@ -76,13 +76,52 @@ body
     padding-left:0.5vw;
     padding-right: 1vw;
 }
+
+
+.imgCard{
+    position: relative;
+    margin-bottom: 1vw;
+}
 .imgCard img
 {
     /* Constrain images within their columns while maintaining aspect ratio.*/
     width:100%;
     height:auto;
+    display:block;
 }
+.imgDesc
+{
+    /* Setting this up to completely overlap the imgCard*/
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
 
+    /* Now prepping it for its hover action.*/
+    visibility:hidden;
+    opacity:0;
+    background-color:rgba(0, 0, 0, 0.7);
+    transition: visibility 0, opacity 0.5s;
+}
+.imgDesc span
+{
+    color:white;
+    font-weight: bold;
+    font-size:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform: translate(-50%, -50%);
+}
+.imgCard:hover .imgDesc
+{
+    visibility: visible;
+    opacity: 1;
+}
 
 
 /* Content area stylings */
