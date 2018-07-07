@@ -17,13 +17,6 @@ body
     width:100%;
     float:left;
 }
-
-/* Here's a special-case class I want because I plan to have images shown in two columns on mobile.*/
-/* On other platforms, this is just equivalent to .col-6 for a 12-column gridview, or whatever.*/
-.col-half
-{
-    width:50%;
-}
 /* End of gridview implementations */
 
 
@@ -70,16 +63,31 @@ body
     color:black;
 }
 
-img
+
+.left
+{
+    width:50%;
+    padding-left: 1vw;
+    padding-right: 0.5vw;
+}
+.right
+{
+    width:50%;
+    padding-left:0.5vw;
+    padding-right: 1vw;
+}
+.imgCard img
 {
     /* Constrain images within their columns while maintaining aspect ratio.*/
     width:100%;
-    height:auto;    
+    height:auto;
 }
+
 
 
 /* Content area stylings */
 #contentArea
 {
-    padding:5px 5px;
+    display:flex;
+    padding: 1vw 0;
 }
