@@ -22,15 +22,10 @@ function navToggle()
 
 function imageModal(element)
 {
-    var image = document.getElementsByTagName('img');
-    image = image[element-1];
-    console.log(image.src);
-    
-    var caption = document.getElementsByTagName('span');
-    caption = caption[element-1];
+    var imgSrc = element.getElementsByClassName('imgCard')[0].childNodes[0].src; // Assumes the first child of an imgCard div is the image
+    var caption = element.getElementsByTagName('span')[0].innerHTML; // Assumes first span is the image caption
 
-
-    modalImage.src = image.src;
-    modalCaption.innerHTML = caption.innerHTML;
+    modalImage.src = imgSrc;
+    modalCaption.innerHTML = caption;
     modal.style.display = "block";
 }

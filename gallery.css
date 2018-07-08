@@ -31,6 +31,7 @@ body
 #navBtn
 {
     color:white;
+    display:block;
     text-decoration:none;
 }
 .navItems
@@ -149,6 +150,7 @@ body
     top:50%;
     transform: translate(0, -50%);
     text-align:center;
+    /* For larger resolutions, add left 50%.*/
 }
 #modalImage
 {
@@ -161,6 +163,24 @@ body
     color:white;
     font-weight:bold;
     font-size:5vw;
+}
+.modalSetup, #modalImage, #modalCaption
+{
+    animation-name: imageZoom;
+    animation-duration: 0.5s;
+    -webkit-animation-name: imageZoome;
+    -webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes imageZoom
+{
+    from{transform: scale(0.1);}
+    to{transform: scale(1);}
+}
+@keyframes imageZoom
+{
+    from{transform: translate(0.1);}
+    to{transform: translate(1);}
 }
 
 
