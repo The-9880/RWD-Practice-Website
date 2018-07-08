@@ -22,34 +22,62 @@
         <div id="contentArea" class="col-12 col-s-12">
 
             <div class="left">
-                    <div class="imgCard"><img src="images/gallery/pond.jpg">
+                    <a href="javascript:imageModal(1);">
+                        <div class="imgCard"><img src="images/gallery/pond.jpg">
                         <div class="imgDesc"><span>Pond</span></div>
-                    </div>
+                        </div>
+                    </a>
 
-                    <div class="imgCard"><img src="images/gallery/samurai.jpg">
-                    <div class="imgDesc"><span>Samurai</span></div></div>
+                    <a href="javascript:imageModal(2);">
+                        <div class="imgCard"><img src="images/gallery/samurai.jpg">
+                        <div class="imgDesc"><span>Samurai</span></div></div>
+                    </a>
 
-                    <div class="imgCard"><img src="images/gallery/sunTree.jpg">
-                    <div class="imgDesc"><span>Sunlit Tree</span></div></div>
+                    <a href="javascript:imageModal(3);">
+                        <div class="imgCard"><img src="images/gallery/sunTree.jpg">
+                        <div class="imgDesc"><span>Sunlit Tree</span></div></div>
+                    </a>
 
-                    <div class="imgCard"><img src="images/gallery/lake.jpg">
-                    <div class="imgDesc"><span>Lake</span></div></div>
+                    <a href="javascript:imageModal(4);">
+                        <div class="imgCard"><img src="images/gallery/lake.jpg">
+                        <div class="imgDesc"><span>Lake</span></div></div>
+                    </a>
+
                 </div>
 
                 <div class="right">
-                    <div class="imgCard"><img src="images/dauntless.jpg">
-                    <div class="imgDesc"><span>Dauntless</span></div></div>
+                    <a href="javascript:imageModal(5);">
+                        <div class="imgCard"><img src="images/dauntless.jpg">
+                        <div class="imgDesc"><span>Dauntless</span></div></div>
+                    </a>
 
-                    <div class="imgCard"><img src="images/gallery/zealand.jpg">
-                    <div class="imgDesc"><span>New Zealand</span></div></div>
+                    <a href="javascript:imageModal(6);">
+                        <div class="imgCard"><img src="images/gallery/zealand.jpg">
+                        <div class="imgDesc"><span>New Zealand</span></div></div>
+                    </a>
 
-                    <div class="imgCard"><img src="images/gallery/queenstown.jpg">
-                    <div class="imgDesc"><span>Queenstown, NZ</span></div></div>
+                    <a href="javascript:imageModal(7);">
+                        <div class="imgCard"><img src="images/gallery/queenstown.jpg">
+                        <div class="imgDesc"><span>Queenstown, NZ</span></div></div>
+                    </a>
 
-                    <div class="imgCard"><img src="images/gallery/snowForest.jpg">
-                    <div class="imgDesc"><span>Icy Forest</span></div></div>
+                    <a href="javascript:imageModal(8);">
+                        <div class="imgCard"><img src="images/gallery/snowForest.jpg">
+                        <div class="imgDesc"><span>Icy Forest</span></div></div>
+                    </a>
+                    
+            </div>
+
+            <!-- Modal setup here -->
+            <!-- Need to disable for screen width >350px... or whatever the 100% width criterion are. -->
+            <div id="modal" onclick="this.style.display='none'">
+                <div class="modalSetup">
+                    <img id="modalImage">
+                    <span id="modalCaption"></span>
                 </div>
+            </div>
 
+            
         </div>
     
     </body>

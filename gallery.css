@@ -7,7 +7,6 @@ body
     margin:0;
     padding:0;
     background-color:#eeeeee;
-
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -25,9 +24,9 @@ body
 {
     background-color:black;   
     text-align:center;
+    position:-webkit-sticky;
     position:sticky;
-    top:0px;
-    z-index: 10;
+    top:0;
 }
 #navBtn
 {
@@ -129,4 +128,42 @@ body
 {
     display:flex;
     padding: 1vw 0;
+    z-index:0;
 }
+
+#modal
+{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+    background-color: rgba(0,0,0,0.7);
+
+    display:none;
+}
+.modalSetup
+{
+    position:absolute;
+    top:50%;
+    transform: translate(0, -50%);
+    text-align:center;
+}
+#modalImage
+{
+    width:100%;
+    height:auto;
+    display:block;
+}
+#modalCaption
+{
+    color:white;
+    font-weight:bold;
+    font-size:5vw;
+}
+
+
+/* Media Queries */
+
+/* My browser goes to a min width of 350px... create another set of rules for >350px*/
