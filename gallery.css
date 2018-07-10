@@ -105,6 +105,7 @@ body
     opacity:0;
     background-color:rgba(0, 0, 0, 0.7);
     transition: visibility 0, opacity 0.5s;
+    -webkit-transition: visiblity 0, opacity 0.5s;
 }
 .imgDesc span
 {
@@ -147,16 +148,15 @@ body
 .modalSetup
 {
     position:absolute;
+    width:100%;
     top:50%;
     transform: translate(0, -50%);
     text-align:center;
-    /* For larger resolutions, add left 50%.*/
 }
 #modalImage
 {
     width:100%;
     height:auto;
-    display:block;
 }
 #modalCaption
 {
@@ -185,5 +185,23 @@ body
 
 
 /* Media Queries */
+/* Constraints chosen using Chrome's developer mode.*/
+@media only screen and (min-width:850px)
+{
+    #modalImage
+    {
+        width:75%;
+        height:auto;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
 
-/* My browser goes to a min width of 350px... create another set of rules for >350px*/
+@media only screen and (min-width:1100px)
+{
+    #modalImage
+    {
+        width:60%;
+    }
+}
