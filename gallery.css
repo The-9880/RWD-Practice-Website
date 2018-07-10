@@ -164,23 +164,23 @@ body
     font-weight:bold;
     font-size:5vw;
 }
-.modalSetup, #modalImage, #modalCaption
+.modalSetup
 {
-    animation-name: imageZoom;
-    animation-duration: 0.5s;
-    -webkit-animation-name: imageZoome;
-    -webkit-animation-duration: 0.5s;
+    animation-name: zoom;
+    animation-duration: 0.25s;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.25s;
 }
 
-@-webkit-keyframes imageZoom
+@keyframes zoom
 {
-    from{transform: scale(0.1);}
-    to{transform: scale(1);}
+    from{transform: translate(0, -50%) scale(0.1);}
+    to{transform: translate(0,-50%) scale(1);}
 }
-@keyframes imageZoom
+@-webkit-keyframes zoom
 {
-    from{transform: translate(0.1);}
-    to{transform: translate(1);}
+    from{-webkit-transform: translate(0, -50%) scale(0.1);}
+    to{-webkit-transform: translate(0, -50%) scale(1);}
 }
 
 
