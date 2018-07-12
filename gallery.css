@@ -6,6 +6,7 @@ body
 {
     margin:0;
     padding:0;
+    padding-top: calc((16px + 6 * ((100vw - 320px) / 680)) + 1vw);
     background-color:#eeeeee;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -24,9 +25,13 @@ body
 {
     background-color:black;   
     text-align:center;
-    position:sticky;
-    position:-webkit-sticky;
+
+    position:fixed;
     top:0;
+    left:0;
+    right:0;
+
+    z-index:10;
 }
 #navBtn
 {
@@ -34,6 +39,8 @@ body
     display:block;
     text-decoration:none;
     font-size: calc(16px + 6 * ((100vw - 320px) / 680)); /*Source: css-tricks.com; I need to study fluid typography, I guess.*/
+    padding:0 0;
+    margin:0 0;
 }
 .navItems
 {
@@ -208,6 +215,7 @@ body
     }
 }
 
+/* Large screens, with navbar being placed on the side instead.*/
 @media only screen and (min-width:1400px)
 {
     .navBar
@@ -223,7 +231,9 @@ body
     }
     #navBtn
     {
-        display:block;
+        position:absolute;
+        top:5px;
+        left:5px;
         height:100%;
         padding:0;
         margin:0;
