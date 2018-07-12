@@ -24,8 +24,8 @@ body
 {
     background-color:black;   
     text-align:center;
-    position:-webkit-sticky;
     position:sticky;
+    position:-webkit-sticky;
     top:0;
 }
 #navBtn
@@ -33,6 +33,7 @@ body
     color:white;
     display:block;
     text-decoration:none;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680)); /*Source: css-tricks.com; I need to study fluid typography, I guess.*/
 }
 .navItems
 {
@@ -81,6 +82,7 @@ body
 .imgCard{
     position: relative;
     margin-bottom: 1vw;
+    cursor:pointer;
 }
 .imgCard img
 {
@@ -203,5 +205,52 @@ body
     #modalImage
     {
         width:60%;
+    }
+}
+
+@media only screen and (min-width:1400px)
+{
+    .navBar
+    {
+        float:left;
+        width:2vw;
+        height:100%;
+
+        position:fixed;
+        top:0px;
+        left:0px;
+        z-index:10;
+    }
+    #navBtn
+    {
+        display:block;
+        height:100%;
+        padding:0;
+        margin:0;
+        float:left;
+
+        font-size:30px;
+        color:white;
+        text-decoration:none;
+    }
+    .navItems
+    {
+        float:left;
+        height:100%;
+        justify-content:space-around;
+        background-color:black;
+    }
+    .navItems a:not(:last-child)
+    {
+        border-bottom:none;
+    }
+    .navItems a
+    {
+
+    }
+    .contentArea
+    {
+        float:right;
+        width: 98vw;
     }
 }
