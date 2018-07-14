@@ -5,7 +5,8 @@ var container = document.getElementById('container');
 
 
 // desktop = 0, tablet = 1, mobile = 2
-const sbPercentages = [["7%", "2%"], ["12%","5%"], [undefined, undefined]];
+const sbPercentages = ["7%", "12%", undefined];
+const untoggleWidth = "calc(40px + 20 * ((100vw - 440px) / 1000))";
 
 var sbTog = false;
 
@@ -29,14 +30,14 @@ function sideBarToggle()
 
     if(!sbTog)
     {
-            sb.style.width = sbPercentages[deviceType][0];
+            sb.style.width = sbPercentages[deviceType];
             sbItems.style.visibility = "visible";
             sbItems.style.opacity = 1;
             sbTog = true;
     }
     else
     {
-            sb.style.width = sbPercentages[deviceType][1];
+            sb.style.width = untoggleWidth;
             sbItems.style.visibility = "hidden";
             sbItems.style.opacity = 0;
             sbTog = false;

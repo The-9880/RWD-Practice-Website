@@ -8,6 +8,14 @@ var modalCaption = document.getElementById('modalCaption');
 
 function navToggle()
 {
+    if(document.documentElement.clientWidth >= 1400)
+    {
+        if(!navTg)
+            navBar.classList.add("col-s-1");
+        else
+            navBar.classList.remove("col-s-1");
+    }
+
     if(!navTg)
     {
         navItems.style.display = "flex";

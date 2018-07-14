@@ -228,6 +228,9 @@ body
         top:0px;
         left:0px;
         z-index:10;
+
+        transition: width 0.5s;
+        -webkit-transition: width 0.5s;
     }
     body
     {
@@ -237,6 +240,11 @@ body
     {
         width: 91.66%;
         float:right;
+    }
+    .col-s-1
+    {
+        width:8.33%;
+        float:left;
     }
     
     #navBtn
@@ -270,7 +278,16 @@ body
     }
     .navItems a
     {
-
+        padding:10px;
+        margin:10px;
+        margin-left:10%;
+        margin-right:10%;
+        border-radius:5px;
+    }
+    .navItems a:hover
+    {
+        color:black;
+        background-color:white;
     }
     .contentArea
     {

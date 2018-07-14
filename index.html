@@ -8,10 +8,7 @@
 
     <!-- Figure a standard black-and-white theme should do well. -->
     <body>
-        <!-- Start with a thin sidebar with only the nav button at the top -->
-        <!-- When the nav button is clicked, the sidebar expands -->
-        <!-- and the nav items become visible... maybe after a delay -->
-        <div class="sidebar" id="sidebar">
+        <div class="sidebar top-navbar" id="sidebar">
             <a id="navBtn" href="javascript:sideBarToggle();">≡</a>
             <div id="sidebar-items">
                 <a href="" class="active">Home</a>
@@ -21,15 +18,8 @@
             </div>
         </div>
 
-        <!-- I dunno, fill with some lorem ipsum or a generic company page -->
-        <!-- And then do a modal implementation for the gallery page later.-->
         <div class="content" id="content">
-
-            <!-- This is the background image setup with the blue tint.-->
-            <div class="container col-12" id="container">
-                <img src="images/intoImage.jpg" class="bgImg">
-                <div class="bgImgOverlay"></div>
-            </div>
+            <div class="bgTint"></div>
             
             <!-- Now this is the header text for the page's content.-->
             <div class="col-12">
@@ -37,11 +27,12 @@
                 <h3 id="subHeading">Lorem ipsum sit amet.</h3>
             </div>
 
+            <!-- Bit of whitespace to separate content from header. -->
             <div class="half-whitespace"></div>
             <hr>
             <div class="half-whitespace"></div>
 
-            <!-- Insert a well-formatted (font-family, size, justified alignment, etc.) text-block here -->
+            <!-- First content section. -->
             <div class="content-section col-12 clearfix">
                 <img src="images/dauntless.jpg" class="sectionImg-right col-5">
                 <div class="content-text col-7">
