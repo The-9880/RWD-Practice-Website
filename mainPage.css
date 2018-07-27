@@ -8,6 +8,11 @@ body
     padding:0;
     margin:0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    background-image: url("images/intoImage.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
 }
 
 /* Gridview implementation */
@@ -94,23 +99,11 @@ body
 /* Main content area stylings below.*/
 .content
 {
-    background-image: url("images/intoImage.jpg");
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-size:cover;
-
     margin:0;
     padding:0 75px;
     width:calc(100vw - (40px + 20 * ((100vw - 440px) / 1000)));
     float:right;
-}
-.bgTint
-{
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+
     background-color: rgba(153, 196, 210, 0.4);
 }
 .centerText-heading, #subHeading
@@ -224,13 +217,29 @@ img.sectionImg-right
 /* Media queries below */
 @media only screen and (max-width:835px) /* make top-navbar. */
 {
+    body
+    {
+        padding-top:40px;
+    }
     .sidebar
     {
         width:40px;
+
+        position:fixed;
+        top:0;
+        width:100%;
+        height:40px;
+
+        text-align:center;
     }
+    #navBtn
+    {
+        position:static;
+    }
+    
     .content
     {
-        width: calc(100vw - 40px);
+        width: 100%;
     }
     [class*="sectionImg"]
     {

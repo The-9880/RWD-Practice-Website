@@ -23,10 +23,6 @@ function sideBarToggle()
     {
         deviceType = 1;
     }
-    else
-    {
-        deviceType = 2;
-    }
 
     if(!sbTog)
     {
@@ -42,4 +38,6 @@ function sideBarToggle()
             sbItems.style.opacity = 0;
             sbTog = false;
     }
+
+    console.log(visualWidth);
 }
