@@ -67,14 +67,13 @@ body
     height:100%;
     padding:100px 0;
 
-    display:flex;
+    display:none;
     flex-direction: column;
     justify-content:space-around;
     text-align:center;
-    visibility: hidden;
 
-    transition: visibility 0s, opacity 0.5s;
-    -webkit-transition: visibility 0s, opacity 0.5s;
+    /* transition: visibility 0s, opacity 0.5s;
+    -webkit-transition: visibility 0s, opacity 0.5s; */
 }
 #sidebar-items a
 {

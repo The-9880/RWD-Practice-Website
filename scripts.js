@@ -12,32 +12,32 @@ var sbTog = false;
 
 function sideBarToggle()
 {
-    var visualWidth = document.documentElement.clientWidth;
-    var deviceType;
+    // If in desktop mode, expand and change width. Do not do this in mobile mode.
+    // Toggle menu item display regardless of what mode it's in.
 
-    if(visualWidth > 768)
+    var visualWidth = document.documentElement.clientWidth;
+
+    if(visualWidth > 835)
     {
-        deviceType = 0;
-    }
-    else if (visualWidth > 400)
-    {
-        deviceType = 1;
+        if(!sbTog)
+        {
+            sb.classList.add("col-5");
+        }
+        else
+        {
+            sb.classList.remove("col-5");
+        }
     }
 
     if(!sbTog)
     {
-            sb.style.width = sbPercentages[deviceType];
-            sbItems.style.visibility = "visible";
-            sbItems.style.opacity = 1;
-            sbTog = true;
+        sbItems.style.display = "flex";
+        sbTog = true;
     }
     else
     {
-            sb.style.width = untoggleWidth;
-            sbItems.style.visibility = "hidden";
-            sbItems.style.opacity = 0;
-            sbTog = false;
+        sbItems.style.display = "none";
+        sbTog = false;
     }
 
-    console.log(visualWidth);
 }
