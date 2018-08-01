@@ -21,11 +21,13 @@ function sideBarToggle()
     {
         if(!sbTog)
         {
-            sb.classList.add("col-5");
+            sb.classList.remove("sidebarWidth");
+            sb.classList.add("col-1");
         }
         else
         {
-            sb.classList.remove("col-5");
+            sb.classList.remove("col-1");
+            sb.classList.add("sidebarWidth");
         }
     }
 
