@@ -85,7 +85,6 @@ body
     padding-right: 1vw;
 }
 
-
 .imgCard{
     position: relative;
     margin-bottom: 1vw;
@@ -293,5 +292,20 @@ body
     {
         float:right;
         width: 98vw;
+    }
+
+    .left, .right
+    {
+        width:33.33%;
+    }
+    .right
+    {
+        padding-right:0.5vw;
+    }
+    .right-L
+    {
+        width:33.33%;
+        padding-left:0.5vw;
+        padding-right:1vw;
     }
 }
