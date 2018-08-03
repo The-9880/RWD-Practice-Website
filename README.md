@@ -20,13 +20,14 @@ The gallery page has a similar navbar, a clean black-and-white theme with a two-
 for laptops and larger. This page uses a touch of JQuery just to shift the images around between columns, when changing screen width. It
 also uses a modal display to enlarge selected images.
 
-## Observations and Learning Points
-I like the gallery page - it's not at all fancy, but it's elegant and fluid. I used JQuery on this page to shift some of the content around
-when the screen width is sufficient, and I designed it with a mobile-first mindset.
+## Observations
+I like the gallery page - it's not at all fancy, but it's elegant and fluid. I used JQuery on this page to shift some of the content around when the screen width is sufficient, and I designed it with a mobile-first mindset.
 
 When I started this little project, I went into it with no planning at all. Just opened the editor and started writing.
-The homepage, as a result, is pretty disgusting; I freely admit this. I started with a desktop implementation and then tried to scale that
-to a mobile setting, which hit a few bumps and so I created a new file and started working on a gallery instead.
+The homepage, as a result, is pretty disgusting; I freely admit this. Like, I honestly have no idea why I went the way I did with that. I started it with a desktop implementation and then tried to scale that to mobile, which hit a few bumps - so I created a new file and started working on a gallery to distract myself.
 After working on the gallery for some time, I discovered it's much easier to start with mobile and then scale up.
 
 I used Chrome's developer mode to help decide on threshold points for layout changes and media queries.
+
+## Next
+I'm going to spend some time studying design and layouts, choose from one of the ideas that popped into my head while I was working on this, and then get to it. I'll also be getting back into some AI projects.
